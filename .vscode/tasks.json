@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Git add",
+            "type": "shell",
+            "command": "git add ."
+        },
+        {
+            "label": "Git commit",
+            "type": "shell",
+            "command": "git commit -m '${input:commit}'"
+        },
+        {
+            "label": "Git push to Heroku",
+            "type": "shell",
+            "command": "git push heroku main"
+        },
+        {
+            "label": "Update app Heroku",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Git add",
+                "Git commit",
+                "Git push to Heroku"
+            ],
+        },
+
+    ],
+    "inputs": [
+        {
+            "id": "commit",
+            "description": "Text to commit",
+            "default": "",
+            "type": "promptString"
+        }
+    ]
+}
