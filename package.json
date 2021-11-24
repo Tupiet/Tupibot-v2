@@ -1,0 +1,24 @@
+{
+  "name": "Tupibot-v2",
+  "version": "1.0.0",
+  "description": "A totally new version of Tupibot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tupiet/Tupibot-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tupiet/Tupibot-v2/issues"
+  },
+  "homepage": "https://github.com/Tupiet/Tupibot-v2#readme",
+  "dependencies": {
+    "discord.js": "^13.3.1"
+  }
+}
