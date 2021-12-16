@@ -10,7 +10,7 @@ for (const file of commandFiles) { // Per cada fitxer de comanda
 	const command = require(`./commands/${file}`) // Carreguem el fitxer
 	// Afegim el fitxer a la collection de comandes
 	// El primer valor és el key, que és el nom. El segon és el valor, que és la comanda en sí
-	client.commands.set(command.name, command) 
+	client.commands.set(command.data.name, command) 
 }
 
 client.once('ready', () => {
